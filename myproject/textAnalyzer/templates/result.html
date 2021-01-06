@@ -1,0 +1,18 @@
+<html>
+   <body>
+   
+      {% if result %}
+         <strong>Here is the result</strong>
+         <p>
+            {% for k,v in result.items %}
+            {{k}}={{v}}<br/>
+            {% endfor %}
+         </p>
+      {% endif %}
+      
+      {% if not result %}
+         <strong>Not able to get the result !</strong>
+      {% endif %}
+      
+   </body>
+</html>
